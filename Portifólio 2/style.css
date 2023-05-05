@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+ body {
+    background-color: #000000;
+    height: 100vh;
+    
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cabecalho{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+     
+  }
+  .cabecalho-imagem{
+      height: 72px ;
+  }
+  
+
+  .conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 230px;
+    width: 950px;
+    height: 375px;
+    margin-bottom: 28px;
+    background-color: #000000;
+    border-color: #9900ff;
+    border-style:outset;
+    border-width: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 70px;
+    padding-left: 70px;
+    padding-right: 1px;
+    gap: 90px;
+    cursor:pointer;
+
+  }
+
+
+.imagem-descricao{
+  margin-top: 55px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+  .conteudo-principal-titulo{ 
+      font-size: 5em;
+      /* fundo gradiente */
+      background-image: linear-gradient(#2f00ff, #e200e2);
+      background-clip: text;
+      -webkit-background-clip: text;
+       color: transparent;
+  
+  }
+  .conteudo-principal-imagem{
+    margin-top: 45px;
+    border-radius: 100%;
+    width: 200px;
+    border-color: #9900ff;
+    border-style:outset;
+    border-width: 5px;
+
+  }
+ 
+  .conteudo-principal-escrito-descricao{
+      font-weight: 400;
+      font-size: 30px;
+      color: #ECD6C4;
+
+  }
+  .botao-imagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+
+
+
+  }
+  .conteudo-principal-button{
+
+    background-color: #9900ff;
+      border: none;
+      border-radius: 20px;
+      width: 180px;
+      height: 60px;
+      color: #000000;
+      font-weight: 400;
+      font-size: 18px;
+  
+  }
+  .conteudo-principal-button:hover {
+      background-color: rgb(255, 255, 255);
+      color: #9900ff;
+
+    }
+  
+    
+    /* squares */
+    body {
+      overflow: hidden;
+    }
+    .squares li {
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      position: absolute;
+      bottom: -40px;
+      animation: up 0.2s infinite alternate;
+      z-index:-1;
+    }
+    
+    @keyframes up {
+      from {
+        opacity: 0;
+        transform: translateY(0);
+      }
+      50% {
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-2000px) rotate(900deg);
+      }
+    }
+    
+  
